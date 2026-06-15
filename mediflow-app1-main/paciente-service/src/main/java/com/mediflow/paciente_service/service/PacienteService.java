@@ -40,4 +40,8 @@ public class PacienteService {
     public void eliminarPaciente(Long id) {
         repository.deleteById(id);
     }
+
+    public Paciente guardar(Paciente paciente) {
+    return repository.save(paciente);
+    }
 }
